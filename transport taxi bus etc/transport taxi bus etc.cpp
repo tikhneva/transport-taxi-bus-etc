@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-class City {
+class City
+{
 public:
     string name;
     double distance;
@@ -44,7 +45,7 @@ public:
     Bus(City from, City to) : Transport(from, to) {}
     double calculateTime() override
     {
-        return to.distance / 50; //км/год
+        return to.distance / 50; //РєРј/РіРѕРґ
     }
 
     double calculateCost() override
@@ -59,7 +60,7 @@ public:
     Train(City from, City to) : Transport(from, to) {}
     double calculateTime() override
     {
-        return to.distance / 100; //км/год
+        return to.distance / 100; //РєРј/РіРѕРґ
     }
 
     double calculateCost() override
@@ -74,7 +75,7 @@ public:
     Tram(City from, City to) : Transport(from, to) {}
     double calculateTime() override
     {
-        return to.distance / 30; //км/год
+        return to.distance / 30; //РєРј/РіРѕРґ
     }
 
     double calculateCost() override
@@ -89,7 +90,7 @@ public:
     Airplane(City from, City to) : Transport(from, to) {}
     double calculateTime() override
     {
-        return to.distance / 350; //км/год
+        return to.distance / 350; //РєРј/РіРѕРґ
     }
 
     double calculateCost() override
@@ -104,12 +105,12 @@ public:
     Bicycle(City from, City to) : Transport(from, to) {}
     double calculateTime() override
     {
-        return to.distance / 15; //км/год
+        return to.distance / 15; //РєРј/РіРѕРґ
     }
 
     double calculateCost() override
     {  
-        return 0; // гроші не потрібні, якщо велосипед свій (а в нас він свій ;))
+        return 0; // РіСЂРѕС€С– РЅРµ РїРѕС‚СЂС–Р±РЅС–, СЏРєС‰Рѕ РІРµР»РѕСЃРёРїРµРґ СЃРІС–Р№ (Р° РІ РЅР°СЃ РІС–РЅ СЃРІС–Р№ ;))
     }
 };
 
